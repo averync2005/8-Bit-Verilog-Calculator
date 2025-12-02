@@ -32,35 +32,6 @@ This project integrates arithmetic modules, logical modules, a Binary to BCD con
 
 ---
 
-## Repository Structure
-/  
-├── 1. Adder/  
-│   └── FA_1.v, FA_4_Ripple.v  
-├── 2. Subtractor/  
-│   └── Subtractor_4_Bit.v  
-├── 3. Multiplier/  
-│   └── Combinational_Multiplier_4_Bit.v  
-├── 4. Divider/  
-│   └── Divider_4_Bit.v  
-├── 5. AND/  
-│   └── AND_4_Bit.v  
-├── 6. OR/  
-│   └── OR_4_Bit.v  
-├── 7. XOR/  
-│   └── XOR_4_Bit.v  
-├── 8. NOT/  
-│   └── NOT_4_Bit.v  
-├── BCD Display/  
-│   ├── Binary_To_BCD_Converter.v  
-│   ├── BCD_7_Segment.v  
-│   └── Multi_Digit_7_Segment_Display_Driver.v  
-├── Calculator.v  
-├── Calculator_tb.v  
-├── Calculator.xdc  
-└── README.md  
-
----
-
 ## How It Works
 
 ### 1. Operation Selection
@@ -89,13 +60,13 @@ A custom display driver cycles through the anodes and outputs the correct segmen
 ## Hardware Setup
 
 ### Inputs
-• A[3:0] → Switches SW0–SW3  
-• B[3:0] → Switches SW4–SW7  
-• operation[2:0] → Switches SW8–SW10  
-• rst → BTN UP  
+- A[3:0] --> Switches SW0–SW3  
+- B[3:0] --> Switches SW4–SW7  
+- operation[2:0] --> Switches SW8–SW10  
+- rst --> BTN UP  
 
 ### Output
-• Four digit seven segment display driven by cathode and anode pins listed in Calculator.xdc  
+- Four digit seven segment display driven by cathode and anode pins listed in Calculator.xdc  
 
 ---
 
@@ -116,7 +87,7 @@ To run the simulation:
 1. Open Vivado and create a new project
 2. Add all Verilog files as sources
 3. Add Calculator.xdc as the constraints file
-4. Run Synthesis → Implementation → Generate Bitstream
+4. Run Synthesis --> Implementation --> Generate Bitstream
 5. Open Hardware Manager and program the Basys 3 board
 
 ---
